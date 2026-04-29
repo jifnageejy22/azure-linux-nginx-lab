@@ -24,16 +24,20 @@ Deploy a Linux Virtual Machine in Azure and host a web server using Nginx.
 ### 2. Connected via SSH
 ```bash
 ssh -i vm-key.pem azureuser@<public-ip>
-**
-3.Installed Nginx
-
+---
+```
+### 3.Installed Nginx
+```bash
 sudo apt update
 sudo apt install nginx -y
-
-4.Started Service
+---
+```
+### 4.Started Service
+```bash
 sudo systemctl start nginx
-
-5.Configured Networking
+---
+```
+### 5.Configured Networking
 
 Opened port 80 in Azure NSG
 
